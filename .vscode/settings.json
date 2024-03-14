@@ -51,5 +51,5 @@
         "temp/": true,
         "Temp/": true
     },
-    "dotnet.defaultSolution": "Trabajo en pareja.sln"
+    "dotnet.defaultSolution": "TrabajoPareja.sln"
 }
