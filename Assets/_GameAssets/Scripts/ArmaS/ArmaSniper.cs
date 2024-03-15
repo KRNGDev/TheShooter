@@ -39,12 +39,12 @@ public class ArmaSniper : MonoBehaviour
         bool hayImpacto = Physics.Raycast(transformOrigenRaycast.position, transformOrigenRaycast.forward, out hitInfo);
         if (hayImpacto)
         {
-            
-            Vector3 posicionFinal= hitInfo.point - hitInfo.normal* distanciaGolpe;
+
+            Vector3 posicionFinal = hitInfo.point - hitInfo.normal * distanciaGolpe;
             // hitInfo.transform.GetComponentInChildren<MeshRenderer>().material.color = Color.red;
             //hitInfo.transform.GetComponentInChildren<Rigidbody>().AddForce(Vector3.forward * fuerzaDisparo);
-            hitInfo.transform.GetComponentInChildren<Rigidbody>().AddExplosionForce(fuerzahorizontal,posicionFinal,radioExpansion,fuerzaVertical);
-            Instantiate(explosion,posicionFinal, hitInfo.transform.rotation);
+            //hitInfo.transform.GetComponentInChildren<Rigidbody>().AddExplosionForce(fuerzahorizontal,posicionFinal,radioExpansion,fuerzaVertical);
+            Instantiate(explosion, posicionFinal, hitInfo.transform.rotation);
             /* if (hitInfo.transform.CompareTag("Enemigo"))
             {
 

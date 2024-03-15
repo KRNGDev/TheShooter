@@ -997,7 +997,23 @@ PrefabInstance:
     - target: {fileID: 7553887249257774751, guid: abab535da5aa2bb4a859fd2b24ba6607, type: 3}
       propertyPath: explosion
       value: 
-      objectReference: {fileID: 4229887165352945998, guid: 60351c73dd7226642a51a1b2ba4f1941, type: 3}
+      objectReference: {fileID: 6747760505227308505, guid: d341591a24f6b5b41b9372227baa2db2, type: 3}
+    - target: {fileID: 7553887249257774751, guid: abab535da5aa2bb4a859fd2b24ba6607, type: 3}
+      propertyPath: fuerzaDisparo
+      value: 200
+      objectReference: {fileID: 0}
+    - target: {fileID: 7553887249257774751, guid: abab535da5aa2bb4a859fd2b24ba6607, type: 3}
+      propertyPath: fuerzaVertical
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7553887249257774751, guid: abab535da5aa2bb4a859fd2b24ba6607, type: 3}
+      propertyPath: radioExpansion
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7553887249257774751, guid: abab535da5aa2bb4a859fd2b24ba6607, type: 3}
+      propertyPath: fuerzahorizontal
+      value: 500
+      objectReference: {fileID: 0}
     - target: {fileID: 7673167207747541430, guid: abab535da5aa2bb4a859fd2b24ba6607, type: 3}
       propertyPath: m_Name
       value: ArmaSniper
@@ -1045,6 +1061,38 @@ PrefabInstance:
       propertyPath: m_Name
       value: Armas
       objectReference: {fileID: 0}
+    - target: {fileID: 6840390267719849267, guid: b9b3deb9e8de2444b99302bb3274187a, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.00000086228056
+      objectReference: {fileID: 0}
+    - target: {fileID: 6840390267719849267, guid: b9b3deb9e8de2444b99302bb3274187a, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.032000035
+      objectReference: {fileID: 0}
+    - target: {fileID: 6840390267719849267, guid: b9b3deb9e8de2444b99302bb3274187a, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.25400075
+      objectReference: {fileID: 0}
+    - target: {fileID: 6840390267719849267, guid: b9b3deb9e8de2444b99302bb3274187a, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.9999986
+      objectReference: {fileID: 0}
+    - target: {fileID: 6840390267719849267, guid: b9b3deb9e8de2444b99302bb3274187a, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0.0016629
+      objectReference: {fileID: 0}
+    - target: {fileID: 6840390267719849267, guid: b9b3deb9e8de2444b99302bb3274187a, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0.000000036190833
+      objectReference: {fileID: 0}
+    - target: {fileID: 6840390267719849267, guid: b9b3deb9e8de2444b99302bb3274187a, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0.0000000547143
+      objectReference: {fileID: 0}
+    - target: {fileID: 6840390267719849267, guid: b9b3deb9e8de2444b99302bb3274187a, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0.191
+      objectReference: {fileID: 0}
     - target: {fileID: 7409799140230881952, guid: b9b3deb9e8de2444b99302bb3274187a, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0.121
@@ -1089,6 +1137,10 @@ PrefabInstance:
       propertyPath: prfabBala
       value: 
       objectReference: {fileID: 8288131944429888295, guid: 6691a832b0763454a869a2bbf14e05e6, type: 3}
+    - target: {fileID: 7880932039085613315, guid: b9b3deb9e8de2444b99302bb3274187a, type: 3}
+      propertyPath: fuerzaDisparo
+      value: 2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
