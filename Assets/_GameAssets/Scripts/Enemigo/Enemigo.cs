@@ -22,9 +22,10 @@ public class Enemigo : MonoBehaviour
     void Start()
     {
 
-if(gameObject.GetComponent<Animator>()!= null){
-        StartCoroutine(ActivarMovimientos());
-}
+        if (gameObject.GetComponent<Animator>() != null)
+        {
+            StartCoroutine(ActivarMovimientos());
+        }
 
     }
 
@@ -34,12 +35,13 @@ if(gameObject.GetComponent<Animator>()!= null){
         if (moviendose)
         {
             transform.Translate(Vector3.forward * velMovimiento * Time.deltaTime);
-            if(gameObject.GetComponent<Animator>()!= null){
-            y = 1f;
-            ;
+            if (gameObject.GetComponent<Animator>() != null)
+            {
+                y = 1f;
+                ;
 
-            //this.gameObject.GetComponent<Animator>().SetFloat("X", x);
-            this.gameObject.GetComponent<Animator>().SetFloat("Y", y);
+                //this.gameObject.GetComponent<Animator>().SetFloat("X", x);
+                this.gameObject.GetComponent<Animator>().SetFloat("Y", y);
             }
         }
 
@@ -49,9 +51,10 @@ if(gameObject.GetComponent<Animator>()!= null){
 
             x = 0.5f;
             transform.Rotate(Vector3.up * velRotate * Time.deltaTime);
-            if(gameObject.GetComponent<Animator>()!= null){
-            this.gameObject.GetComponent<Animator>().SetFloat("X", x);
-            // this.gameObject.GetComponent<Animator>().SetFloat("Y", y);
+            if (gameObject.GetComponent<Animator>() != null)
+            {
+                this.gameObject.GetComponent<Animator>().SetFloat("X", x);
+                // this.gameObject.GetComponent<Animator>().SetFloat("Y", y);
             }
         }
 
