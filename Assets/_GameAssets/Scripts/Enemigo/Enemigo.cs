@@ -11,10 +11,10 @@ public class Enemigo : MonoBehaviour
     public GameObject suelo;
 
     public float x, y;
-    public float tiempoEspera;
+    public float tiempoEspera = 3.0f;
 
     private int estado;
-    private bool moviendose = false;
+    private bool moviendose = true;
     private bool girando = false;
     private bool activo = true;
 

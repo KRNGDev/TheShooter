@@ -748,7 +748,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   velRotate: 40
-  velMovimiento: 20
+  velMovimiento: 10
   suelo: {fileID: 0}
   x: 0
   y: 0
