@@ -169,8 +169,8 @@ HingeJoint:
     bounciness: 0
     bounceMinVelocity: 0.2
     contactDistance: 0
-  m_BreakForce: Infinity
-  m_BreakTorque: Infinity
+  m_BreakForce: 3000
+  m_BreakTorque: 3000
   m_EnableCollision: 0
   m_EnablePreprocessing: 1
   m_MassScale: 1
@@ -344,8 +344,8 @@ HingeJoint:
     bounciness: 0
     bounceMinVelocity: 0.2
     contactDistance: 0
-  m_BreakForce: 200
-  m_BreakTorque: Infinity
+  m_BreakForce: 3000
+  m_BreakTorque: 3000
   m_EnableCollision: 0
   m_EnablePreprocessing: 1
   m_MassScale: 1
@@ -498,8 +498,8 @@ HingeJoint:
     bounciness: 0
     bounceMinVelocity: 0.2
     contactDistance: 0
-  m_BreakForce: 400
-  m_BreakTorque: Infinity
+  m_BreakForce: 3000
+  m_BreakTorque: 3000
   m_EnableCollision: 0
   m_EnablePreprocessing: 1
   m_MassScale: 1
@@ -650,8 +650,8 @@ FixedJoint:
   m_GameObject: {fileID: 4383151648665661988}
   m_ConnectedBody: {fileID: 6998095557146687216}
   m_ConnectedArticulationBody: {fileID: 0}
-  m_BreakForce: 400
-  m_BreakTorque: Infinity
+  m_BreakForce: 3000
+  m_BreakTorque: 3000
   m_EnableCollision: 0
   m_EnablePreprocessing: 1
   m_MassScale: 1
@@ -789,8 +789,8 @@ FixedJoint:
   m_GameObject: {fileID: 5973109619632394165}
   m_ConnectedBody: {fileID: 3797841067713821171}
   m_ConnectedArticulationBody: {fileID: 0}
-  m_BreakForce: 400
-  m_BreakTorque: Infinity
+  m_BreakForce: 3000
+  m_BreakTorque: 3000
   m_EnableCollision: 0
   m_EnablePreprocessing: 1
   m_MassScale: 1
@@ -965,8 +965,8 @@ HingeJoint:
     bounciness: 0
     bounceMinVelocity: 0.2
     contactDistance: 0
-  m_BreakForce: 500
-  m_BreakTorque: Infinity
+  m_BreakForce: 3000
+  m_BreakTorque: 3000
   m_EnableCollision: 0
   m_EnablePreprocessing: 1
   m_MassScale: 1
@@ -1095,8 +1095,8 @@ FixedJoint:
   m_GameObject: {fileID: 6361354166962969805}
   m_ConnectedBody: {fileID: 6998095557146687216}
   m_ConnectedArticulationBody: {fileID: 0}
-  m_BreakForce: 400
-  m_BreakTorque: Infinity
+  m_BreakForce: 3000
+  m_BreakTorque: 3000
   m_EnableCollision: 0
   m_EnablePreprocessing: 1
   m_MassScale: 1
@@ -1357,8 +1357,8 @@ HingeJoint:
     bounciness: 0
     bounceMinVelocity: 0.2
     contactDistance: 0
-  m_BreakForce: 500
-  m_BreakTorque: Infinity
+  m_BreakForce: 3000
+  m_BreakTorque: 3000
   m_EnableCollision: 0
   m_EnablePreprocessing: 1
   m_MassScale: 1
@@ -1489,8 +1489,8 @@ FixedJoint:
   m_GameObject: {fileID: 7801440428211659651}
   m_ConnectedBody: {fileID: 3797841067713821171}
   m_ConnectedArticulationBody: {fileID: 0}
-  m_BreakForce: Infinity
-  m_BreakTorque: Infinity
+  m_BreakForce: 3000
+  m_BreakTorque: 3000
   m_EnableCollision: 0
   m_EnablePreprocessing: 1
   m_MassScale: 1
@@ -1643,8 +1643,8 @@ HingeJoint:
     bounciness: 0
     bounceMinVelocity: 0.2
     contactDistance: 0
-  m_BreakForce: 400
-  m_BreakTorque: Infinity
+  m_BreakForce: 3000
+  m_BreakTorque: 3000
   m_EnableCollision: 0
   m_EnablePreprocessing: 1
   m_MassScale: 1

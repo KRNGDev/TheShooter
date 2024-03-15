@@ -45,6 +45,7 @@ public class ArmaSniper : MonoBehaviour
             //hitInfo.transform.GetComponentInChildren<Rigidbody>().AddForce(Vector3.forward * fuerzaDisparo);
             //hitInfo.transform.GetComponentInChildren<Rigidbody>().AddExplosionForce(fuerzahorizontal,posicionFinal,radioExpansion,fuerzaVertical);
             Instantiate(explosion, posicionFinal, hitInfo.transform.rotation);
+            hitInfo.transform.GetComponentInChildren<Rigidbody>().AddForce(Vector3.forward * fuerzaDisparo);
             /* if (hitInfo.transform.CompareTag("Enemigo"))
             {
 
