@@ -60,7 +60,6 @@ public class Player : MonoBehaviour
     private void OnCollisionEnter(Collision other)
     {
         estaEnSuelo = true;
-        if enemigo    
         vida--;
         textObject.GetComponentInChildren<TextMeshProUGUI>().SetText(vida.ToString());
     }

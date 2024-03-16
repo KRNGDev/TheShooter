@@ -21,12 +21,12 @@ public class Bomba : MonoBehaviour
 
     public int puntosPorColumna = 1; 
 
-    public GameObject textObject;
+    private GameObject textObject;
 
 
     void Start()
     {
-        textObject = GameObject.FindWithTag("Suelo");
+        textObject = GameObject.FindWithTag("Puntuacion");
     }
 
 
@@ -55,7 +55,7 @@ public class Bomba : MonoBehaviour
                 print("puntuacion BOMBA: " + puntuacion);
 
 
-                textObject.GetComponent<TextMeshProUGUI>().SetText(puntuacion.ToString());
+                textObject.GetComponentInChildren<TextMeshProUGUI>().SetText(puntuacion.ToString());
                 Destroy(this.gameObject);
             }
         }
