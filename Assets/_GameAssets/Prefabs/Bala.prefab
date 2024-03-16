@@ -149,10 +149,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   radioExpansion: 2
-  fuerzahorizontal: 500
+  fuerzahorizontal: 10000
   fuerzaVertical: 1
   explosion: {fileID: 4229887165352945998, guid: 60351c73dd7226642a51a1b2ba4f1941, type: 3}
   layerMask:
     serializedVersion: 2
     m_Bits: 4294967295
   temporizador: 1
+  puntosPorColumna: 2
+  textObject: {fileID: 0}

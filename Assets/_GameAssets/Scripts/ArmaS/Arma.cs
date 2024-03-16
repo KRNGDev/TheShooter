@@ -13,6 +13,8 @@ public class Arma : MonoBehaviour
     public AudioClip audioSinBalas;
     public AudioClip audioDisparo;
     public AudioClip audioReload;
+
+
     public void IntentarDisparo()
     {
         if (municion > 0)
@@ -36,11 +38,13 @@ public class Arma : MonoBehaviour
 
         GameObject bala = Instantiate(prfabBala, transforEmisor.position, transforEmisor.rotation);
         bala.GetComponent<Rigidbody>().AddForce(bala.transform.forward * fuerzaDisparo);
+
         if (audioDisparo != null)
         {
 
             GetComponent<AudioSource>().PlayOneShot(audioDisparo);
         }
+
 
     }
     public void Reload()

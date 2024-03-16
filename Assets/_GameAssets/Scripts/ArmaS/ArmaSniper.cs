@@ -1,6 +1,9 @@
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
+using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class ArmaSniper : MonoBehaviour
 {
@@ -18,6 +21,13 @@ public class ArmaSniper : MonoBehaviour
     public AudioClip audioSinBalas;
     public AudioClip audioDisparo;
     public AudioClip audioReload;
+
+    private int puntuacion = 0;
+
+    public int puntosPorColumna = 1; 
+
+    public GameObject textObject;
+
     public void IntentarDisparo()
     {
         if (municion > 0)
@@ -51,6 +61,13 @@ public class ArmaSniper : MonoBehaviour
 
 
             }*/
+
+            puntuacion = puntuacion + puntosPorColumna;
+            print("puntuacionSNIPER: " + puntuacion);
+
+
+            textObject.GetComponentInChildren<TextMeshProUGUI>().SetText(puntuacion.ToString());
+
         }
 
 

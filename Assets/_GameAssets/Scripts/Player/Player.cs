@@ -1,7 +1,10 @@
 using System.Collections;
 using System.Collections.Generic;
 using System.Runtime.CompilerServices;
+using TMPro;
+using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Player : MonoBehaviour
 {
@@ -15,6 +18,9 @@ public class Player : MonoBehaviour
     private bool estaEnSuelo = true;
     public AudioClip audioSalto;
 
+    private int vida = 102;
+
+    public GameObject textObject;
 
     // Start is called before the first frame update
     void Start()
@@ -54,5 +60,8 @@ public class Player : MonoBehaviour
     private void OnCollisionEnter(Collision other)
     {
         estaEnSuelo = true;
+        if enemigo    
+        vida--;
+        textObject.GetComponentInChildren<TextMeshProUGUI>().SetText(vida.ToString());
     }
 }

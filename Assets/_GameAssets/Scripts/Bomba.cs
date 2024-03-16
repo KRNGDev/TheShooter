@@ -1,6 +1,9 @@
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
+using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Bomba : MonoBehaviour
 {
@@ -13,6 +16,20 @@ public class Bomba : MonoBehaviour
 
     [Header("Segundos de espera para que explote")]
     public float temporizador;
+
+    private int puntuacion;
+
+    public int puntosPorColumna = 1; 
+
+    public GameObject textObject;
+
+
+    void Start()
+    {
+        textObject = GameObject.FindWithTag("Suelo");
+    }
+
+
 
     void OnCollisionEnter(Collision other)
     {
@@ -33,7 +50,12 @@ public class Bomba : MonoBehaviour
                     radioExpansion,
                     fuerzaVertical);
                 Instantiate(explosion, this.transform.position, this.transform.rotation);
+        
+                puntuacion = puntuacion + puntosPorColumna;
+                print("puntuacion BOMBA: " + puntuacion);
 
+
+                textObject.GetComponent<TextMeshProUGUI>().SetText(puntuacion.ToString());
                 Destroy(this.gameObject);
             }
         }
