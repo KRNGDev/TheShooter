@@ -2,6 +2,8 @@ using System.Collections;
 using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
+using System;
+using System.Threading;
 
 public class CocheTonto : MonoBehaviour
 {
@@ -20,14 +22,27 @@ public class CocheTonto : MonoBehaviour
         transform.Translate(Vector3.forward * speed * Time.deltaTime);
 
     }
+
     void OnCollisionEnter(Collision other)
     {
         if (other.gameObject.tag != suelo.tag)
         {
 
-            transform.Rotate(0, Random.Range(minAngle, maxAngle), 0);
+            transform.Rotate(0, UnityEngine.Random.Range(minAngle, maxAngle), 0);
 
         }
+        if (other.gameObject.CompareTag("Bala"))
+        {
+         /*   Transform[] transforms = GetComponentsInChildren<Transform>();
+            foreach (var t in transforms)
+            {
+                t.parent = null;
+            }*/
+            Destroy(other.gameObject);
+        }
     }
-
 }
+
+
+
+

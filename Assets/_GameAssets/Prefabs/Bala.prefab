@@ -156,5 +156,4 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 4294967295
   temporizador: 1
-  puntosPorColumna: 2
-  textObject: {fileID: 0}
+  puntosPorColumna: 1

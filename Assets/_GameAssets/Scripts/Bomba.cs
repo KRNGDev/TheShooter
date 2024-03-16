@@ -19,7 +19,7 @@ public class Bomba : MonoBehaviour
 
     private int puntuacion;
 
-    public int puntosPorColumna = 1; 
+    public int puntosPorBomba = 1; 
 
     private GameObject textObject;
 
@@ -51,7 +51,7 @@ public class Bomba : MonoBehaviour
                     fuerzaVertical);
                 Instantiate(explosion, this.transform.position, this.transform.rotation);
         
-                puntuacion = puntuacion + puntosPorColumna;
+                puntuacion = puntuacion + puntosPorBomba;
                 print("puntuacion BOMBA: " + puntuacion);
 
 
