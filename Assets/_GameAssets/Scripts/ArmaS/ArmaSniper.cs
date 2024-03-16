@@ -24,7 +24,7 @@ public class ArmaSniper : MonoBehaviour
 
     private int puntuacion = 0;
 
-    public int puntosPorColumna = 1; 
+    public int puntosSnipper = 1; 
 
     public GameObject textObject;
 
@@ -62,7 +62,7 @@ public class ArmaSniper : MonoBehaviour
 
             }*/
 
-            puntuacion = puntuacion + puntosPorColumna;
+            puntuacion = puntuacion + puntosSnipper;
             print("puntuacionSNIPER: " + puntuacion);
 
 

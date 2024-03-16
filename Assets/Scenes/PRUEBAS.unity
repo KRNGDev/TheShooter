@@ -3310,7 +3310,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 955639992525790034, guid: a37e0c67880fa4543934a42cb230ec88, type: 3}
       propertyPath: puntosPorColumna
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1379745909100767602, guid: a37e0c67880fa4543934a42cb230ec88, type: 3}
       propertyPath: textObject
