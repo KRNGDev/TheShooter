@@ -9,6 +9,7 @@ public class ArmaPlayer : MonoBehaviour
     public Arma arma;
     public Arma granada;
     public ArmaSniper sniper;
+    
     public Boolean armaBool = true;
     public Boolean sniperBool = false;
     public Boolean granadaBool = false;

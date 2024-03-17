@@ -6,8 +6,9 @@ using UnityEngine.Video;
 
 public class Arma : MonoBehaviour
 {
-    public int capacidadCargador = 100;
-    public int municion = 0;
+    public int capacidadCargador;
+    public int cantidadMunicion = 0;
+    public int municionCargada;
     public GameObject textoBalasPistola;
     public GameObject prfabBala;
     public Transform transforEmisor;
@@ -18,11 +19,12 @@ public class Arma : MonoBehaviour
 
     void Start()
     {
-        textoBalasPistola.GetComponentInChildren<TextMeshProUGUI>().SetText(municion.ToString());
+        textoBalasPistola.GetComponentInChildren<TextMeshProUGUI>().SetText(municionCargada.ToString());
     }
+    
     public void IntentarDisparo()
     {
-        if (municion > 0)
+        if (municionCargada > 0)
         {
 
             Disparar();
@@ -39,8 +41,8 @@ public class Arma : MonoBehaviour
     }
     public void Disparar()
     {
-        municion--;
-        textoBalasPistola.GetComponentInChildren<TextMeshProUGUI>().SetText(municion.ToString());
+        municionCargada--;
+        textoBalasPistola.GetComponentInChildren<TextMeshProUGUI>().SetText(municionCargada.ToString());
 
         GameObject bala = Instantiate(prfabBala, transforEmisor.position, transforEmisor.rotation);
         bala.GetComponent<Rigidbody>().AddForce(bala.transform.forward * fuerzaDisparo);
@@ -60,9 +62,24 @@ public class Arma : MonoBehaviour
         {
             GetComponent<AudioSource>().PlayOneShot(audioReload);
         }
+        if (cantidadMunicion > 0)
+        {
+            if (cantidadMunicion >= capacidadCargador)
+            {
+                int municionNecesaria= capacidadCargador-municionCargada;
+                municionCargada = municionNecesaria;
+                cantidadMunicion -= municionNecesaria;
+            }
+            else
+            {
+                int municionNecesaria= cantidadMunicion-municionCargada;
+                municionCargada = municionNecesaria;
+                cantidadMunicion -= municionNecesaria;
+            }
 
-        municion = capacidadCargador;
-        textoBalasPistola.GetComponentInChildren<TextMeshProUGUI>().SetText(municion.ToString());
+            textoBalasPistola.GetComponentInChildren<TextMeshProUGUI>().SetText(municionCargada.ToString());
+
+        }
 
     }
 

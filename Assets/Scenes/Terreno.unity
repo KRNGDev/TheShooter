@@ -26056,6 +26056,63 @@ MeshCollider:
   m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: -5248526772195102673, guid: 53ce92d8a6e18ac44b9f39f88d6ecb1c, type: 3}
+--- !u!1001 &1390460493
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 389288672397671247, guid: ddbba6f35037abe40863762dc78b5a1a, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 77.243645
+      objectReference: {fileID: 0}
+    - target: {fileID: 389288672397671247, guid: ddbba6f35037abe40863762dc78b5a1a, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1.52
+      objectReference: {fileID: 0}
+    - target: {fileID: 389288672397671247, guid: ddbba6f35037abe40863762dc78b5a1a, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 71.14469
+      objectReference: {fileID: 0}
+    - target: {fileID: 389288672397671247, guid: ddbba6f35037abe40863762dc78b5a1a, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 389288672397671247, guid: ddbba6f35037abe40863762dc78b5a1a, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 389288672397671247, guid: ddbba6f35037abe40863762dc78b5a1a, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 389288672397671247, guid: ddbba6f35037abe40863762dc78b5a1a, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 389288672397671247, guid: ddbba6f35037abe40863762dc78b5a1a, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 389288672397671247, guid: ddbba6f35037abe40863762dc78b5a1a, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 389288672397671247, guid: ddbba6f35037abe40863762dc78b5a1a, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2479006035301491789, guid: ddbba6f35037abe40863762dc78b5a1a, type: 3}
+      propertyPath: m_Name
+      value: Vida
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: ddbba6f35037abe40863762dc78b5a1a, type: 3}
 --- !u!1 &1395008140
 GameObject:
   m_ObjectHideFlags: 0
@@ -31004,9 +31061,17 @@ PrefabInstance:
       value: Player
       objectReference: {fileID: 0}
     - target: {fileID: 955639992525790034, guid: a37e0c67880fa4543934a42cb230ec88, type: 3}
+      propertyPath: cantidadMunicion
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 955639992525790034, guid: a37e0c67880fa4543934a42cb230ec88, type: 3}
       propertyPath: textoBalasSniper
       value: 
       objectReference: {fileID: 1523193169}
+    - target: {fileID: 1379745909100767602, guid: a37e0c67880fa4543934a42cb230ec88, type: 3}
+      propertyPath: cantidadMunicion
+      value: 100
+      objectReference: {fileID: 0}
     - target: {fileID: 1379745909100767602, guid: a37e0c67880fa4543934a42cb230ec88, type: 3}
       propertyPath: textoBalasPistola
       value: 
@@ -31075,6 +31140,10 @@ PrefabInstance:
       propertyPath: prfabBala
       value: 
       objectReference: {fileID: 3738325907996574400, guid: ebe15e871bb004f409688d1276844380, type: 3}
+    - target: {fileID: 6699481261090280265, guid: a37e0c67880fa4543934a42cb230ec88, type: 3}
+      propertyPath: cantidadMunicion
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 6699481261090280265, guid: a37e0c67880fa4543934a42cb230ec88, type: 3}
       propertyPath: textoBalasPistola
       value: 
@@ -43111,3 +43180,4 @@ SceneRoots:
   - {fileID: 756813092}
   - {fileID: 2749263602821567748}
   - {fileID: 5412434251348039761}
+  - {fileID: 1390460493}
