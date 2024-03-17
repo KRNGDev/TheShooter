@@ -10,10 +10,12 @@ public class CocheTonto : MonoBehaviour
     public float speed;
     public float minAngle;
     public float maxAngle;
+    private GameObject player;
 
     private GameObject suelo;
     void Start()
     {
+        player = GameObject.FindGameObjectWithTag("Player");
         suelo = GameObject.FindWithTag("Suelo");
     }
     // Update is called once per frame
@@ -31,14 +33,17 @@ public class CocheTonto : MonoBehaviour
             transform.Rotate(0, UnityEngine.Random.Range(minAngle, maxAngle), 0);
 
         }
-        if (other.gameObject.CompareTag("Bala"))
+        if (other.gameObject.CompareTag("BalaPistola"))
         {
-         /*   Transform[] transforms = GetComponentsInChildren<Transform>();
-            foreach (var t in transforms)
+            if (player != null)
             {
-                t.parent = null;
-            }*/
-            Destroy(other.gameObject);
+
+                player.GetComponent<SistemaPuntos>().puntuacion += 1;
+
+            }
+
+            print("Destruido");
+            Destroy(gameObject, 3);
         }
     }
 }

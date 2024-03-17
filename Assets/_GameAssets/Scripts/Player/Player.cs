@@ -17,10 +17,11 @@ public class Player : MonoBehaviour
     private Rigidbody rbPlayer;
     private bool estaEnSuelo = true;
     public AudioClip audioSalto;
+    
 
     private int vida = 102;
 
-    public GameObject textObject;
+    public GameObject textVida;
 
     // Start is called before the first frame update
     void Start()
@@ -39,6 +40,8 @@ public class Player : MonoBehaviour
 
         transform.Rotate(0, x * Time.deltaTime * velRotate, 0);
         transform.Translate(0, 0, y * Time.deltaTime * velMovimiento);
+
+        
 
       //  animator.SetFloat("X", x);
        // animator.SetFloat("Y", y);
@@ -59,13 +62,17 @@ public class Player : MonoBehaviour
     }
     private void OnCollisionEnter(Collision other)
     {
+        if (other.gameObject.CompareTag("Suelo"))
+        {
         estaEnSuelo = true;
+        }
+        
 
         if (other.gameObject.CompareTag("Enemigo"))
         {
         vida--;
         }
 
-        textObject.GetComponentInChildren<TextMeshProUGUI>().SetText(vida.ToString());
+        textVida.GetComponentInChildren<TextMeshProUGUI>().SetText(vida.ToString());
     }
 }

@@ -7,7 +7,7 @@ public class Enemigo : MonoBehaviour
 {
 
     public float velRotate = 40.0f;
-    public float velMovimiento = 5.0f;
+    public float velMovimiento = 10.0f;
     public GameObject suelo;
 
     public float x, y;
@@ -17,11 +17,12 @@ public class Enemigo : MonoBehaviour
     private bool moviendose = true;
     private bool girando = false;
     private bool activo = true;
+    private GameObject player;
 
     // Start is called before the first frame update
     void Start()
     {
-
+        player = GameObject.FindGameObjectWithTag("Player");
 
         StartCoroutine(ActivarMovimientos());
 
@@ -34,10 +35,11 @@ public class Enemigo : MonoBehaviour
         if (moviendose)
         {
             transform.Translate(Vector3.forward * velMovimiento * Time.deltaTime);
+            transform.Rotate(Vector3.up * 0 * Time.deltaTime);
             if (gameObject.GetComponent<Animator>() != null)
             {
                 y = 1f;
-                ;
+
 
                 //this.gameObject.GetComponent<Animator>().SetFloat("X", x);
                 this.gameObject.GetComponent<Animator>().SetFloat("Y", y);
@@ -66,7 +68,7 @@ public class Enemigo : MonoBehaviour
         while (activo)
         {
             // Debug.Log("Empienza el while");
-            estado = Random.Range(1, 4);
+            estado = Random.Range(1, 3);
             if (gameObject.GetComponent<Animator>() != null)
             {
                 this.gameObject.GetComponent<Animator>().SetFloat("X", 0);
@@ -77,12 +79,13 @@ public class Enemigo : MonoBehaviour
                 case 1:
                     y = 0f;
                     x = 0f;
+                    moviendose = true;
                     if (gameObject.GetComponent<Animator>() != null)
                     {
                         this.gameObject.GetComponent<Animator>().SetFloat("X", x);
                         this.gameObject.GetComponent<Animator>().SetFloat("Y", y);
                     }
-                    moviendose = true;
+
 
                     // Debug.Log(" el caso Se mueve");
 
@@ -91,13 +94,14 @@ public class Enemigo : MonoBehaviour
                     //Debug.Log("Gira y avanza");
                     y = 0f;
                     x = 0f;
+                    girando = true;
+                    moviendose = false;
                     if (gameObject.GetComponent<Animator>() != null)
                     {
                         this.gameObject.GetComponent<Animator>().SetFloat("X", x);
                         this.gameObject.GetComponent<Animator>().SetFloat("Y", y);
                     }
-                    girando = true;
-                    moviendose = false;
+
                     break;
                 case 3:
                     //Debug.Log("Quieto");
@@ -132,15 +136,22 @@ public class Enemigo : MonoBehaviour
             moviendose = false;
             girando = true;
         }*/
-        if (other.gameObject.CompareTag("Bala"))
+        if (other.gameObject.CompareTag("BalaPistola"))
         {
+            if (player != null)
+            {
+
+                player.GetComponent<SistemaPuntos>().puntuacion += 1;
+
+            }
+
             Transform[] transforms = GetComponentsInChildren<Transform>();
             foreach (var t in transforms)
             {
                 t.parent = null;
             }
 
-            Destroy(gameObject);
+            Destroy(gameObject,3);
         }
 
 

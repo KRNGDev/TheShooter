@@ -95,6 +95,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: taxi (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 92becc19a4b75c04c9a8d7f00a28b108, type: 3}
+      propertyPath: m_TagString
+      value: Enemigo
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -269,6 +273,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: f4fb8ea6e16a0ad46be9d842d729a8c3, type: 3}
       propertyPath: m_Name
       value: firetruck (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: f4fb8ea6e16a0ad46be9d842d729a8c3, type: 3}
+      propertyPath: m_TagString
+      value: Enemigo
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -445,6 +453,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: race (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 2ebaf5efb0e75a84daa73de311211aa8, type: 3}
+      propertyPath: m_TagString
+      value: Enemigo
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -577,6 +589,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: f4fb8ea6e16a0ad46be9d842d729a8c3, type: 3}
       propertyPath: m_Name
       value: firetruck (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: f4fb8ea6e16a0ad46be9d842d729a8c3, type: 3}
+      propertyPath: m_TagString
+      value: Enemigo
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -753,6 +769,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: tractor
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 16481e5da25e1e941b47ec8b62183c27, type: 3}
+      propertyPath: m_TagString
+      value: Enemigo
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -891,6 +911,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 92becc19a4b75c04c9a8d7f00a28b108, type: 3}
       propertyPath: m_Name
       value: taxi
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 92becc19a4b75c04c9a8d7f00a28b108, type: 3}
+      propertyPath: m_TagString
+      value: Enemigo
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -1067,6 +1091,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: firetruck (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: f4fb8ea6e16a0ad46be9d842d729a8c3, type: 3}
+      propertyPath: m_TagString
+      value: Enemigo
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1242,6 +1270,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: firetruck
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: f4fb8ea6e16a0ad46be9d842d729a8c3, type: 3}
+      propertyPath: m_TagString
+      value: Enemigo
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1416,6 +1448,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 8d9a3155ca566c64f9692b0a82e4ae6a, type: 3}
       propertyPath: m_Name
       value: ambulance
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 8d9a3155ca566c64f9692b0a82e4ae6a, type: 3}
+      propertyPath: m_TagString
+      value: Enemigo
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -1634,6 +1670,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: race
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 2ebaf5efb0e75a84daa73de311211aa8, type: 3}
+      propertyPath: m_TagString
+      value: Enemigo
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1766,6 +1806,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 8f5c7802a5c82024ab34bc422481d959, type: 3}
       propertyPath: m_Name
       value: van
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 8f5c7802a5c82024ab34bc422481d959, type: 3}
+      propertyPath: m_TagString
+      value: Enemigo
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -1941,6 +1985,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 8f5c7802a5c82024ab34bc422481d959, type: 3}
       propertyPath: m_Name
       value: van (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 8f5c7802a5c82024ab34bc422481d959, type: 3}
+      propertyPath: m_TagString
+      value: Enemigo
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

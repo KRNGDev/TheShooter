@@ -18,7 +18,7 @@ GameObject:
   - component: {fileID: 6553833157938394410}
   m_Layer: 0
   m_Name: POLICE
-  m_TagString: Untagged
+  m_TagString: Enemigo
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -210,9 +210,37 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -8569518100099689332, guid: c78aa2b86bb887c45bd9c640178f44a2, type: 3}
+      propertyPath: m_TagString
+      value: Enemigo
+      objectReference: {fileID: 0}
+    - target: {fileID: -6899449840304533443, guid: c78aa2b86bb887c45bd9c640178f44a2, type: 3}
+      propertyPath: m_TagString
+      value: Enemigo
+      objectReference: {fileID: 0}
+    - target: {fileID: -4819223349682164798, guid: c78aa2b86bb887c45bd9c640178f44a2, type: 3}
+      propertyPath: m_TagString
+      value: Enemigo
+      objectReference: {fileID: 0}
+    - target: {fileID: -1328860500621903259, guid: c78aa2b86bb887c45bd9c640178f44a2, type: 3}
+      propertyPath: m_TagString
+      value: Enemigo
+      objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: c78aa2b86bb887c45bd9c640178f44a2, type: 3}
       propertyPath: m_Name
       value: police
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: c78aa2b86bb887c45bd9c640178f44a2, type: 3}
+      propertyPath: m_TagString
+      value: Enemigo
+      objectReference: {fileID: 0}
+    - target: {fileID: 5290935056804024145, guid: c78aa2b86bb887c45bd9c640178f44a2, type: 3}
+      propertyPath: m_TagString
+      value: Enemigo
+      objectReference: {fileID: 0}
+    - target: {fileID: 7626630938287245856, guid: c78aa2b86bb887c45bd9c640178f44a2, type: 3}
+      propertyPath: m_TagString
+      value: Enemigo
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

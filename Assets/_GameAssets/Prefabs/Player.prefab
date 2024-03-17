@@ -15,6 +15,7 @@ GameObject:
   - component: {fileID: 2575762022877303880}
   - component: {fileID: 3253870168750190167}
   - component: {fileID: 1584702144842535319}
+  - component: {fileID: 2662225165261100376}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -79,6 +80,7 @@ MonoBehaviour:
   velRotate: 200
   velMovimiento: 5
   audioSalto: {fileID: 0}
+  textVida: {fileID: 0}
 --- !u!114 &2819233323551591698
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -171,6 +173,20 @@ CharacterController:
   m_SkinWidth: 0.08
   m_MinMoveDistance: 0.001
   m_Center: {x: 0, y: 0.64, z: 0}
+--- !u!114 &2662225165261100376
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 270864570422484893}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b9e0bd0229d6d3b468ac7debb46c294e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  puntuacion: 0
+  textoPuntos: {fileID: 0}
 --- !u!1 &540792744502514607
 GameObject:
   m_ObjectHideFlags: 0
@@ -995,12 +1011,16 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7553887249257774751, guid: abab535da5aa2bb4a859fd2b24ba6607, type: 3}
+      propertyPath: municion
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 7553887249257774751, guid: abab535da5aa2bb4a859fd2b24ba6607, type: 3}
       propertyPath: explosion
       value: 
       objectReference: {fileID: 6747760505227308505, guid: d341591a24f6b5b41b9372227baa2db2, type: 3}
     - target: {fileID: 7553887249257774751, guid: abab535da5aa2bb4a859fd2b24ba6607, type: 3}
       propertyPath: fuerzaDisparo
-      value: 200
+      value: 10000
       objectReference: {fileID: 0}
     - target: {fileID: 7553887249257774751, guid: abab535da5aa2bb4a859fd2b24ba6607, type: 3}
       propertyPath: fuerzaVertical
@@ -1059,7 +1079,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 91376441711233455, guid: b9b3deb9e8de2444b99302bb3274187a, type: 3}
       propertyPath: m_Name
-      value: Armas
+      value: Pistola
       objectReference: {fileID: 0}
     - target: {fileID: 6840390267719849267, guid: b9b3deb9e8de2444b99302bb3274187a, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1075,23 +1095,23 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6840390267719849267, guid: b9b3deb9e8de2444b99302bb3274187a, type: 3}
       propertyPath: m_LocalRotation.w
-      value: 0.9999986
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6840390267719849267, guid: b9b3deb9e8de2444b99302bb3274187a, type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0.0016629
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6840390267719849267, guid: b9b3deb9e8de2444b99302bb3274187a, type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0.000000036190833
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6840390267719849267, guid: b9b3deb9e8de2444b99302bb3274187a, type: 3}
       propertyPath: m_LocalRotation.z
-      value: -0.0000000547143
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6840390267719849267, guid: b9b3deb9e8de2444b99302bb3274187a, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
-      value: 0.191
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7409799140230881952, guid: b9b3deb9e8de2444b99302bb3274187a, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1134,12 +1154,16 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7880932039085613315, guid: b9b3deb9e8de2444b99302bb3274187a, type: 3}
+      propertyPath: municion
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 7880932039085613315, guid: b9b3deb9e8de2444b99302bb3274187a, type: 3}
       propertyPath: prfabBala
       value: 
       objectReference: {fileID: 8288131944429888295, guid: 6691a832b0763454a869a2bbf14e05e6, type: 3}
     - target: {fileID: 7880932039085613315, guid: b9b3deb9e8de2444b99302bb3274187a, type: 3}
       propertyPath: fuerzaDisparo
-      value: 2
+      value: 300
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

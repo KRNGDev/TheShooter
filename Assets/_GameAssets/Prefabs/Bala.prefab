@@ -16,7 +16,7 @@ GameObject:
   - component: {fileID: 899491396631016002}
   m_Layer: 0
   m_Name: Bala
-  m_TagString: Bala
+  m_TagString: BalaPistola
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -156,4 +156,5 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 4294967295
   temporizador: 1
-  puntosPorColumna: 1
+  puntosPorBomba: 1
+  textObject: {fileID: 0}

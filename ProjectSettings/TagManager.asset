@@ -8,6 +8,7 @@ TagManager:
   - Suelo
   - Enemigo
   - Puntuacion
+  - BalaPistola
   layers:
   - Default
   - TransparentFX

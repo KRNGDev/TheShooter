@@ -8,25 +8,23 @@ using UnityEngine.UI;
 public class ArmaSniper : MonoBehaviour
 {
     public int capacidadCargador = 100;
-    public int municion = 0;
+    public int municion = 100;
+    public GameObject textoBalasSniper;
     public float radioExpansion;
     public float fuerzahorizontal;
     public float fuerzaVertical;
     public float distanciaGolpe;
     public GameObject explosion;
 
-    public Transform transforEmisor;
     public Transform transformOrigenRaycast;
     public float fuerzaDisparo = 50.0f;
     public AudioClip audioSinBalas;
     public AudioClip audioDisparo;
     public AudioClip audioReload;
-
-    private int puntuacion = 0;
-
-    public int puntosSnipper = 1; 
-
-    public GameObject textObject;
+     void Start()
+    {
+        textoBalasSniper.GetComponentInChildren<TextMeshProUGUI>().SetText(municion.ToString());
+    }
 
     public void IntentarDisparo()
     {
@@ -45,6 +43,7 @@ public class ArmaSniper : MonoBehaviour
     public void Disparar()
     {
         municion--;
+        textoBalasSniper.GetComponentInChildren<TextMeshProUGUI>().SetText(municion.ToString());
         RaycastHit hitInfo;
         bool hayImpacto = Physics.Raycast(transformOrigenRaycast.position, transformOrigenRaycast.forward, out hitInfo);
         if (hayImpacto)
@@ -55,18 +54,11 @@ public class ArmaSniper : MonoBehaviour
             //hitInfo.transform.GetComponentInChildren<Rigidbody>().AddForce(Vector3.forward * fuerzaDisparo);
             //hitInfo.transform.GetComponentInChildren<Rigidbody>().AddExplosionForce(fuerzahorizontal,posicionFinal,radioExpansion,fuerzaVertical);
             Instantiate(explosion, posicionFinal, hitInfo.transform.rotation);
-            hitInfo.transform.GetComponentInChildren<Rigidbody>().AddForce(Vector3.forward * fuerzaDisparo);
-            /* if (hitInfo.transform.CompareTag("Enemigo"))
+
+            if (hitInfo.transform.CompareTag("Suelo"))
             {
-
-
-            }*/
-
-            puntuacion = puntuacion + puntosSnipper;
-            print("puntuacionSNIPER: " + puntuacion);
-
-
-            textObject.GetComponentInChildren<TextMeshProUGUI>().SetText(puntuacion.ToString());
+                hitInfo.transform.GetComponentInChildren<Rigidbody>().AddForce(Vector3.forward * fuerzaDisparo);
+            }
 
         }
 
@@ -85,6 +77,7 @@ public class ArmaSniper : MonoBehaviour
         }
 
         municion = capacidadCargador;
+        textoBalasSniper.GetComponentInChildren<TextMeshProUGUI>().SetText(municion.ToString());
 
     }
 }
