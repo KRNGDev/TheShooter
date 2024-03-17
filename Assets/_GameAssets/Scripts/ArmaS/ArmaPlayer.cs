@@ -9,7 +9,7 @@ public class ArmaPlayer : MonoBehaviour
     public Arma arma;
     public Arma granada;
     public ArmaSniper sniper;
-    
+
     public Boolean armaBool = true;
     public Boolean sniperBool = false;
     public Boolean granadaBool = false;
@@ -18,6 +18,26 @@ public class ArmaPlayer : MonoBehaviour
     public GameObject camara1Persona;
     public GameObject camaraPrincipal;
 
+    public GameObject armaSecundaria;
+
+    public GameObject armaArrojadiza;
+
+    private void Awake()
+    {
+
+
+        armaSecundaria.SetActive(true);
+
+        armaArrojadiza.SetActive(true);
+    }
+    private void Start()
+    {
+
+
+        armaSecundaria.SetActive(false);
+
+        armaArrojadiza.SetActive(false);
+    }
     // Update is called once per frame
     void Update()
     {

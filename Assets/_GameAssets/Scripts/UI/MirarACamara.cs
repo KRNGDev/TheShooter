@@ -5,6 +5,7 @@ using UnityEngine;
 public class MirarACamara : MonoBehaviour
 {
     private Camera mainCamera;
+   
 
     void Start()
     {

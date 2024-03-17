@@ -16,6 +16,7 @@ GameObject:
   - component: {fileID: 572464031739688204}
   - component: {fileID: 5435531683070378323}
   - component: {fileID: 6330616624562942437}
+  - component: {fileID: 7013095675760842510}
   m_Layer: 3
   m_Name: TRUCKFLAT
   m_TagString: Enemigo
@@ -162,6 +163,22 @@ MonoBehaviour:
   speed: 2
   minAngle: 100
   maxAngle: 260
+--- !u!114 &7013095675760842510
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7309954985490371122}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fbac1ad3cf3f8264a97bf1fdbb765179, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  item:
+  - {fileID: 9107158626545401785, guid: 55b5e6791f3693c4e9331a74034e95fc, type: 3}
+  - {fileID: 2479006035301491789, guid: ddbba6f35037abe40863762dc78b5a1a, type: 3}
+  - {fileID: 2479006035301491789, guid: ddbba6f35037abe40863762dc78b5a1a, type: 3}
 --- !u!1001 &4034787847916120371
 PrefabInstance:
   m_ObjectHideFlags: 0

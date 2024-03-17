@@ -366,6 +366,7 @@ GameObject:
   - component: {fileID: 2235045418462055425}
   - component: {fileID: 8795055710787299803}
   - component: {fileID: 6815435724218216710}
+  - component: {fileID: 5922085323451501518}
   m_Layer: 0
   m_Name: Enemigo
   m_TagString: Enemigo
@@ -468,12 +469,32 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9f9856d61f08b0f4a812e8861568b61b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  velocidadMov: 4
+  velocidadMov: 5
   cronometro: 0
   angulo: {x: 0, y: 0, z: 0, w: 0}
   grado: 0
   atacando: 0
   puedeDisparar: 1
+--- !u!114 &5922085323451501518
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2282633980497737244}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fbac1ad3cf3f8264a97bf1fdbb765179, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  item:
+  - {fileID: 2479006035301491789, guid: ddbba6f35037abe40863762dc78b5a1a, type: 3}
+  - {fileID: 9107158626545401785, guid: 55b5e6791f3693c4e9331a74034e95fc, type: 3}
+  - {fileID: 2479006035301491789, guid: ddbba6f35037abe40863762dc78b5a1a, type: 3}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  alturaDrop: 1
 --- !u!1 &2733932934255676294
 GameObject:
   m_ObjectHideFlags: 0

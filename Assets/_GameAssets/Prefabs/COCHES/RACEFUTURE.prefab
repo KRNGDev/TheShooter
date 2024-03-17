@@ -16,6 +16,7 @@ GameObject:
   - component: {fileID: 4836032233883230570}
   - component: {fileID: 2051798754615779303}
   - component: {fileID: 328089017744479091}
+  - component: {fileID: 1259965569581237965}
   m_Layer: 3
   m_Name: RACEFUTURE
   m_TagString: Enemigo
@@ -162,6 +163,22 @@ MonoBehaviour:
   speed: 4
   minAngle: 100
   maxAngle: 260
+--- !u!114 &1259965569581237965
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4968784688658944696}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fbac1ad3cf3f8264a97bf1fdbb765179, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  item:
+  - {fileID: 9107158626545401785, guid: 55b5e6791f3693c4e9331a74034e95fc, type: 3}
+  - {fileID: 2479006035301491789, guid: ddbba6f35037abe40863762dc78b5a1a, type: 3}
+  - {fileID: 2479006035301491789, guid: ddbba6f35037abe40863762dc78b5a1a, type: 3}
 --- !u!1001 &2146613446227049611
 PrefabInstance:
   m_ObjectHideFlags: 0

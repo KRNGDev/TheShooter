@@ -16,6 +16,7 @@ GameObject:
   - component: {fileID: 3844290900864530275}
   - component: {fileID: 8829887713827263090}
   - component: {fileID: 6553833157938394410}
+  - component: {fileID: 2788811062558038606}
   m_Layer: 3
   m_Name: POLICE
   m_TagString: Enemigo
@@ -162,6 +163,22 @@ MonoBehaviour:
   speed: 4
   minAngle: 100
   maxAngle: 260
+--- !u!114 &2788811062558038606
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4790030530681867087}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fbac1ad3cf3f8264a97bf1fdbb765179, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  item:
+  - {fileID: 9107158626545401785, guid: 55b5e6791f3693c4e9331a74034e95fc, type: 3}
+  - {fileID: 2479006035301491789, guid: ddbba6f35037abe40863762dc78b5a1a, type: 3}
+  - {fileID: 2479006035301491789, guid: ddbba6f35037abe40863762dc78b5a1a, type: 3}
 --- !u!1001 &5256641767962416744
 PrefabInstance:
   m_ObjectHideFlags: 0

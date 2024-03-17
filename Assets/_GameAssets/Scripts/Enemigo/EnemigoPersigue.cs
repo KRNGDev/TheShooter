@@ -6,7 +6,7 @@ using UnityEngine;
 public class EnemigoPersigue : MonoBehaviour
 {
     private GameObject player;
-    public int velocidadMov=4;
+    public int velocidadMov = 4;
     private int rutina;
     public float cronometro;
     public Quaternion angulo;
@@ -66,7 +66,7 @@ public class EnemigoPersigue : MonoBehaviour
             if (Vector3.Distance(transform.position, targetEnemigo.transform.position) > 15)
             {
                 var lookPos = targetEnemigo.transform.position - transform.position;
-               // lookPos.y = 0;
+                // lookPos.y = 0;
                 var rotacion = Quaternion.LookRotation(lookPos);
                 transform.rotation = Quaternion.RotateTowards(transform.rotation, rotacion, 2);
 
@@ -75,14 +75,14 @@ public class EnemigoPersigue : MonoBehaviour
             else
             {
                 var lookPos = targetEnemigo.transform.position - transform.position;
-                    lookPos.y = 0;
-                    var rotacion = Quaternion.LookRotation(lookPos);
-                    transform.rotation = Quaternion.RotateTowards(transform.rotation, rotacion, 2);
+                lookPos.y = 0;
+                var rotacion = Quaternion.LookRotation(lookPos);
+                transform.rotation = Quaternion.RotateTowards(transform.rotation, rotacion, 2);
 
                 if (puedeDisparar)
                 {
 
-                   
+
                     puedeDisparar = false;
                     InvokeRepeating("TiempoEspera", 1f, 2);
                 }
@@ -96,7 +96,7 @@ public class EnemigoPersigue : MonoBehaviour
 
     void TiempoEspera()
     {
-         
+
 
         disparo.Disparar();
         puedeDisparar = true;
@@ -114,7 +114,7 @@ public class EnemigoPersigue : MonoBehaviour
 
             }
 
-
+            gameObject.GetComponent<DropeoItem>().SoltarObjeto();
             Destroy(gameObject, 1);
         }
 

@@ -18,6 +18,7 @@ GameObject:
   - component: {fileID: 2574572981645094719}
   - component: {fileID: 7640755289087011473}
   - component: {fileID: 268198389941087644}
+  - component: {fileID: 2051330768969529838}
   m_Layer: 3
   m_Name: DELIVERYFLAT
   m_TagString: Enemigo
@@ -206,6 +207,22 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 0.94073105, y: 0.3228755, z: 0.6823654}
   m_Center: {x: -0.029634476, y: 0.3300724, z: 0.07302475}
+--- !u!114 &2051330768969529838
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 365792931334450786}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fbac1ad3cf3f8264a97bf1fdbb765179, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  item:
+  - {fileID: 9107158626545401785, guid: 55b5e6791f3693c4e9331a74034e95fc, type: 3}
+  - {fileID: 2479006035301491789, guid: ddbba6f35037abe40863762dc78b5a1a, type: 3}
+  - {fileID: 2479006035301491789, guid: ddbba6f35037abe40863762dc78b5a1a, type: 3}
 --- !u!1001 &5772084640741001144
 PrefabInstance:
   m_ObjectHideFlags: 0

@@ -119,6 +119,5 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   vida: 5
-  municionPistola: 0
-  municionSniper: 0
-  municionGranada: 0
+  municion: 0
+  textItem: {fileID: 6244975245550440334, guid: ebbbfc2bf60035945a2fb7fdf324f382, type: 3}

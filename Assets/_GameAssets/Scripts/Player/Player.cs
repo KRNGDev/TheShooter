@@ -42,7 +42,7 @@ public class Player : MonoBehaviour
 
         transform.Rotate(0, x * Time.deltaTime * velRotate, 0);
         transform.Translate(0, 0, y * Time.deltaTime * velMovimiento);*/
-
+        textVida.GetComponentInChildren<TextMeshProUGUI>().SetText(vida.ToString());
         if (vida <= 0)
         {
             panelGameOver.SetActive(true);

@@ -27,7 +27,7 @@ public class CocheTonto : MonoBehaviour
 
     void OnCollisionEnter(Collision other)
     {
-        if (other.gameObject.tag != suelo.tag)
+        if (!other.gameObject.CompareTag("Suelo"))
         {
 
             transform.Rotate(0, UnityEngine.Random.Range(minAngle, maxAngle), 0);
@@ -43,6 +43,7 @@ public class CocheTonto : MonoBehaviour
             }
 
             print("Destruido");
+            gameObject.GetComponent<DropeoItem>().SoltarObjeto();
             Destroy(gameObject, 1);
         }
     }

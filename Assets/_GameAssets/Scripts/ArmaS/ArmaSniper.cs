@@ -3,14 +3,16 @@ using System.Collections.Generic;
 using TMPro;
 using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.PlayerLoop;
 using UnityEngine.UI;
 
 public class ArmaSniper : MonoBehaviour
 {
-    public int capacidadCargador;
+    public int capacidadCargador = 0;
     public int cantidadMunicion = 0;
-    public int municionCargada;
+    public int municionCargada = 0;
     public GameObject textoBalasSniper;
+    public GameObject textoCantidadBalas;
     public float radioExpansion;
     public float fuerzahorizontal;
     public float fuerzaVertical;
@@ -22,9 +24,27 @@ public class ArmaSniper : MonoBehaviour
     public AudioClip audioSinBalas;
     public AudioClip audioDisparo;
     public AudioClip audioReload;
+    
+    private void Awake() {
+        if (textoBalasSniper && textoCantidadBalas)
+        {
+            textoCantidadBalas.GetComponentInChildren<TextMeshProUGUI>().SetText(cantidadMunicion.ToString());
+            textoBalasSniper.GetComponentInChildren<TextMeshProUGUI>().SetText(municionCargada.ToString());
+        }
+    }
     void Start()
     {
-        textoBalasSniper.GetComponentInChildren<TextMeshProUGUI>().SetText(municionCargada.ToString());
+        municionCargada = capacidadCargador;
+        cantidadMunicion= capacidadCargador;
+
+    }
+    private void Update()
+    {
+        if (textoBalasSniper && textoCantidadBalas)
+        {
+            textoCantidadBalas.GetComponentInChildren<TextMeshProUGUI>().SetText(cantidadMunicion.ToString());
+            textoBalasSniper.GetComponentInChildren<TextMeshProUGUI>().SetText(municionCargada.ToString());
+        }
     }
 
 
@@ -79,24 +99,30 @@ public class ArmaSniper : MonoBehaviour
         }
         if (cantidadMunicion > 0)
         {
-            if (cantidadMunicion > 0)
+
+            int municionNecesaria = capacidadCargador - municionCargada;
+            if (municionNecesaria > cantidadMunicion || (municionCargada + cantidadMunicion) >= capacidadCargador)
             {
-                if (cantidadMunicion > capacidadCargador)
+                if (municionNecesaria >= cantidadMunicion)
                 {
-                    int municionNecesaria = capacidadCargador - municionCargada;
-                    municionCargada = municionNecesaria;
-                    cantidadMunicion -= municionNecesaria;
+                    print("eleccion");
+                    municionCargada += cantidadMunicion;
+                    cantidadMunicion = 0;
                 }
                 else
                 {
-                    int municionNecesaria = cantidadMunicion - municionCargada;
-                    municionCargada = municionNecesaria;
+                    municionCargada += municionNecesaria;
                     cantidadMunicion -= municionNecesaria;
                 }
+
+
+
                 textoBalasSniper.GetComponentInChildren<TextMeshProUGUI>().SetText(municionCargada.ToString());
+                textoCantidadBalas.GetComponentInChildren<TextMeshProUGUI>().SetText(cantidadMunicion.ToString());
             }
         }
 
 
     }
+
 }
