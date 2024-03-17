@@ -56,8 +56,7 @@ namespace PowerUp
                     int playerMaxVida = other.gameObject.GetComponent<Player>().maxVida;
                     if (playerVida < playerMaxVida)
                     {
-                        int vidaNecesaria = playerMaxVida - playerVida;
-
+                    
                         print("Ganas vida");
 
                         if ((vida + playerVida) >= playerMaxVida)
@@ -66,6 +65,7 @@ namespace PowerUp
                             int vidaRestante= playerMaxVida-playerVida;
                             other.gameObject.GetComponent<Player>().vida =  playerMaxVida;
                             textItem.GetComponentInChildren<TextMeshProUGUI>().SetText(vidaRestante.ToString()+" Vida ");
+                            Instantiate(textItem, transform.position, transform.rotation);
                         }
                         else
                         {
@@ -77,6 +77,7 @@ namespace PowerUp
                     }else
                     {
                         textItem.GetComponentInChildren<TextMeshProUGUI>().SetText(" Vida al MAX");
+                        Instantiate(textItem, transform.position, transform.rotation);
                     }
                 }
                 Destroy(gameObject);
