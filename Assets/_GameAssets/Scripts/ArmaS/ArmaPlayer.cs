@@ -7,9 +7,11 @@ using System;
 public class ArmaPlayer : MonoBehaviour
 {
     public Arma arma;
+    public Arma granada;
     public ArmaSniper sniper;
     public Boolean armaBool = true;
     public Boolean sniperBool = false;
+    public Boolean granadaBool = false;
 
     public Image crossHair;
     public GameObject camara1Persona;
@@ -33,6 +35,11 @@ public class ArmaPlayer : MonoBehaviour
                 print("Recarga");
                 sniper.Reload();
             }
+            else if (granadaBool)
+            {
+
+                granada.Reload();
+            }
 
         }
         else if (Input.GetKeyDown(KeyCode.Mouse1))
@@ -47,9 +54,9 @@ public class ArmaPlayer : MonoBehaviour
             camara1Persona.SetActive(true);
             camara1Persona.gameObject.GetComponent<Camera>().fieldOfView = 18;
 
-            this.gameObject.GetComponent<Player>().enabled = false;
-            this.gameObject.GetComponent<FPSController>().enabled = true;
-            this.gameObject.GetComponent<CharacterController>().enabled = true;
+            /* this.gameObject.GetComponent<Player>().enabled = false;
+             this.gameObject.GetComponent<FPSController>().enabled = true;
+             this.gameObject.GetComponent<CharacterController>().enabled = true;*/
 
 
 
@@ -59,15 +66,31 @@ public class ArmaPlayer : MonoBehaviour
         {
             armaBool = true;
             sniperBool = false;
-            this.gameObject.GetComponent<Player>().enabled = true;
-            this.gameObject.GetComponent<FPSController>().enabled = false;
-            this.gameObject.GetComponent<CharacterController>().enabled = false;
+            /* this.gameObject.GetComponent<Player>().enabled = true;
+             this.gameObject.GetComponent<FPSController>().enabled = false;
+             this.gameObject.GetComponent<CharacterController>().enabled = false;*/
             //Activa el crossHair
             crossHair.enabled = false;
             //Modifica el fieldofview de la camara
             camara1Persona.gameObject.GetComponent<Camera>().fieldOfView = 18;
             camara1Persona.SetActive(false);
             camaraPrincipal.SetActive(true);
+        }
+        else if (Input.GetKeyDown(KeyCode.Q))
+        {
+            armaBool = false;
+            sniperBool = false;
+            granadaBool = true;
+
+
+        }
+        else if (Input.GetKeyUp(KeyCode.Q))
+        {
+            armaBool = true;
+            sniperBool = false;
+            granadaBool = false;
+
+
         }
 
     }
@@ -81,6 +104,11 @@ public class ArmaPlayer : MonoBehaviour
         {
             print("Dispara");
             sniper.IntentarDisparo();
+        }
+        else if (granadaBool)
+        {
+
+            granada.IntentarDisparo();
         }
     }
 

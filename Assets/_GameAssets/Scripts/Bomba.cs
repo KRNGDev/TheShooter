@@ -24,7 +24,7 @@ void Start()
 
     void OnCollisionEnter(Collision other)
     {
-        Explotar();
+        Invoke("Explotar",temporizador);
     }
     public void Explotar()
     {

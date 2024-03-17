@@ -36,35 +36,35 @@ public class Player : MonoBehaviour
 
     // Update is called once per frame
     void Update()
-    {
+    {/*
         x = Input.GetAxis("Horizontal");
         y = Input.GetAxis("Vertical");
 
         transform.Rotate(0, x * Time.deltaTime * velRotate, 0);
-        transform.Translate(0, 0, y * Time.deltaTime * velMovimiento);
+        transform.Translate(0, 0, y * Time.deltaTime * velMovimiento);*/
 
         if (vida <= 0)
         {
             panelGameOver.SetActive(true);
             Destroy(gameObject);
         }
+        /*
+                //  animator.SetFloat("X", x);
+                // animator.SetFloat("Y", y);
+                if (Input.GetButtonDown("Jump") && estaEnSuelo)
+                {
 
-        //  animator.SetFloat("X", x);
-        // animator.SetFloat("Y", y);
-        if (Input.GetButtonDown("Jump") && estaEnSuelo)
-        {
+                    rbPlayer.AddForce(Vector3.up * fuerzaSalto, ForceMode.Impulse);
+                    estaEnSuelo = false;
+                    if (audioSalto != null)
+                    {
+                        GetComponent<AudioSource>().PlayOneShot(audioSalto);
+                    }
 
-            rbPlayer.AddForce(Vector3.up * fuerzaSalto, ForceMode.Impulse);
-            estaEnSuelo = false;
-            if (audioSalto != null)
-            {
-                GetComponent<AudioSource>().PlayOneShot(audioSalto);
-            }
+       
 
-
-
-        }
-
+    }
+ */
 
     }
     private void OnCollisionEnter(Collision other)
