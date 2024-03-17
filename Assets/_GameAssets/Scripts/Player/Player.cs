@@ -8,8 +8,9 @@ using UnityEngine.UI;
 
 public class Player : MonoBehaviour
 {
-   // public Animator animator;
+    // public Animator animator;
     private float x, y;
+    public int vida = 102;
     public float fuerzaSalto = 10.0f;
     public float velRotate = 200.0f;
     public float velMovimiento = 5.0f;
@@ -17,9 +18,10 @@ public class Player : MonoBehaviour
     private Rigidbody rbPlayer;
     private bool estaEnSuelo = true;
     public AudioClip audioSalto;
-    
+    public GameObject panelGameOver;
 
-    private int vida = 102;
+
+
 
     public GameObject textVida;
 
@@ -28,7 +30,7 @@ public class Player : MonoBehaviour
     {
         player = GameObject.FindWithTag("Player");
         rbPlayer = player.GetComponent<Rigidbody>();
-       // animator = GetComponent<Animator>();
+        // animator = GetComponent<Animator>();
 
     }
 
@@ -41,10 +43,14 @@ public class Player : MonoBehaviour
         transform.Rotate(0, x * Time.deltaTime * velRotate, 0);
         transform.Translate(0, 0, y * Time.deltaTime * velMovimiento);
 
-        
+        if (vida <= 0)
+        {
+            panelGameOver.SetActive(true);
+            Destroy(gameObject);
+        }
 
-      //  animator.SetFloat("X", x);
-       // animator.SetFloat("Y", y);
+        //  animator.SetFloat("X", x);
+        // animator.SetFloat("Y", y);
         if (Input.GetButtonDown("Jump") && estaEnSuelo)
         {
 
@@ -56,6 +62,7 @@ public class Player : MonoBehaviour
             }
 
 
+
         }
 
 
@@ -64,13 +71,13 @@ public class Player : MonoBehaviour
     {
         if (other.gameObject.CompareTag("Suelo"))
         {
-        estaEnSuelo = true;
+            estaEnSuelo = true;
         }
-        
+
 
         if (other.gameObject.CompareTag("Enemigo"))
         {
-        vida--;
+            vida--;
         }
 
         textVida.GetComponentInChildren<TextMeshProUGUI>().SetText(vida.ToString());

@@ -43,7 +43,7 @@ public class CocheTonto : MonoBehaviour
             }
 
             print("Destruido");
-            Destroy(gameObject, 3);
+            Destroy(gameObject, 1);
         }
     }
 }

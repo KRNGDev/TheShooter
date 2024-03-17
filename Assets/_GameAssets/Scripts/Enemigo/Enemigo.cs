@@ -151,7 +151,7 @@ public class Enemigo : MonoBehaviour
                 t.parent = null;
             }
 
-            Destroy(gameObject,3);
+            Destroy(gameObject,1);
         }
 
 
