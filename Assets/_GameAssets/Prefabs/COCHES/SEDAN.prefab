@@ -16,7 +16,7 @@ GameObject:
   - component: {fileID: 2371435740092153332}
   - component: {fileID: 7656043389817522082}
   - component: {fileID: 2579795257316830094}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: SEDAN
   m_TagString: Enemigo
   m_Icon: {fileID: 0}
@@ -211,16 +211,32 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -8569518100099689332, guid: 199a54ec86ff1d649b06955fc7aaaf68, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: -8569518100099689332, guid: 199a54ec86ff1d649b06955fc7aaaf68, type: 3}
       propertyPath: m_TagString
       value: Enemigo
+      objectReference: {fileID: 0}
+    - target: {fileID: -6899449840304533443, guid: 199a54ec86ff1d649b06955fc7aaaf68, type: 3}
+      propertyPath: m_Layer
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: -6899449840304533443, guid: 199a54ec86ff1d649b06955fc7aaaf68, type: 3}
       propertyPath: m_TagString
       value: Enemigo
       objectReference: {fileID: 0}
     - target: {fileID: -4819223349682164798, guid: 199a54ec86ff1d649b06955fc7aaaf68, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: -4819223349682164798, guid: 199a54ec86ff1d649b06955fc7aaaf68, type: 3}
       propertyPath: m_TagString
       value: Enemigo
+      objectReference: {fileID: 0}
+    - target: {fileID: -1328860500621903259, guid: 199a54ec86ff1d649b06955fc7aaaf68, type: 3}
+      propertyPath: m_Layer
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: -1328860500621903259, guid: 199a54ec86ff1d649b06955fc7aaaf68, type: 3}
       propertyPath: m_TagString
@@ -231,8 +247,16 @@ PrefabInstance:
       value: sedan
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 199a54ec86ff1d649b06955fc7aaaf68, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 199a54ec86ff1d649b06955fc7aaaf68, type: 3}
       propertyPath: m_TagString
       value: Enemigo
+      objectReference: {fileID: 0}
+    - target: {fileID: 7626630938287245856, guid: 199a54ec86ff1d649b06955fc7aaaf68, type: 3}
+      propertyPath: m_Layer
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 7626630938287245856, guid: 199a54ec86ff1d649b06955fc7aaaf68, type: 3}
       propertyPath: m_TagString

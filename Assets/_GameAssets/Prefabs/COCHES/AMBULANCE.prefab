@@ -16,7 +16,7 @@ GameObject:
   - component: {fileID: 8067522483504224153}
   - component: {fileID: 5553425557589501517}
   - component: {fileID: -8441936558765971303}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: AMBULANCE
   m_TagString: Enemigo
   m_Icon: {fileID: 0}
@@ -211,24 +211,48 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -8569518100099689332, guid: 388d85b92dacc104d98e69ff4dc31b6b, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: -8569518100099689332, guid: 388d85b92dacc104d98e69ff4dc31b6b, type: 3}
       propertyPath: m_TagString
       value: Enemigo
+      objectReference: {fileID: 0}
+    - target: {fileID: -6899449840304533443, guid: 388d85b92dacc104d98e69ff4dc31b6b, type: 3}
+      propertyPath: m_Layer
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: -6899449840304533443, guid: 388d85b92dacc104d98e69ff4dc31b6b, type: 3}
       propertyPath: m_TagString
       value: Enemigo
       objectReference: {fileID: 0}
     - target: {fileID: -5757406101998815754, guid: 388d85b92dacc104d98e69ff4dc31b6b, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: -5757406101998815754, guid: 388d85b92dacc104d98e69ff4dc31b6b, type: 3}
       propertyPath: m_TagString
       value: Enemigo
+      objectReference: {fileID: 0}
+    - target: {fileID: -4819223349682164798, guid: 388d85b92dacc104d98e69ff4dc31b6b, type: 3}
+      propertyPath: m_Layer
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: -4819223349682164798, guid: 388d85b92dacc104d98e69ff4dc31b6b, type: 3}
       propertyPath: m_TagString
       value: Enemigo
       objectReference: {fileID: 0}
     - target: {fileID: -1328860500621903259, guid: 388d85b92dacc104d98e69ff4dc31b6b, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: -1328860500621903259, guid: 388d85b92dacc104d98e69ff4dc31b6b, type: 3}
       propertyPath: m_TagString
       value: Enemigo
+      objectReference: {fileID: 0}
+    - target: {fileID: -413930134452501938, guid: 388d85b92dacc104d98e69ff4dc31b6b, type: 3}
+      propertyPath: m_Layer
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: -413930134452501938, guid: 388d85b92dacc104d98e69ff4dc31b6b, type: 3}
       propertyPath: m_TagString
@@ -239,8 +263,16 @@ PrefabInstance:
       value: ambulance
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 388d85b92dacc104d98e69ff4dc31b6b, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 388d85b92dacc104d98e69ff4dc31b6b, type: 3}
       propertyPath: m_TagString
       value: Enemigo
+      objectReference: {fileID: 0}
+    - target: {fileID: 7626630938287245856, guid: 388d85b92dacc104d98e69ff4dc31b6b, type: 3}
+      propertyPath: m_Layer
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 7626630938287245856, guid: 388d85b92dacc104d98e69ff4dc31b6b, type: 3}
       propertyPath: m_TagString
