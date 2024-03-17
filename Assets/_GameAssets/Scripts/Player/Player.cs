@@ -10,7 +10,8 @@ public class Player : MonoBehaviour
 {
     // public Animator animator;
     private float x, y;
-    public int vida = 102;
+    public int vida;
+    public int maxVida = 50;
     public float fuerzaSalto = 10.0f;
     public float velRotate = 200.0f;
     public float velMovimiento = 5.0f;
@@ -19,15 +20,14 @@ public class Player : MonoBehaviour
     private bool estaEnSuelo = true;
     public AudioClip audioSalto;
     public GameObject panelGameOver;
-
-
-
+    public GameObject textMaxVida;
 
     public GameObject textVida;
 
     // Start is called before the first frame update
     void Start()
     {
+        vida = maxVida;
         player = GameObject.FindWithTag("Player");
         rbPlayer = player.GetComponent<Rigidbody>();
         // animator = GetComponent<Animator>();
@@ -42,7 +42,11 @@ public class Player : MonoBehaviour
 
         transform.Rotate(0, x * Time.deltaTime * velRotate, 0);
         transform.Translate(0, 0, y * Time.deltaTime * velMovimiento);*/
+
+        //Escribe la vida en el panel de vida
         textVida.GetComponentInChildren<TextMeshProUGUI>().SetText(vida.ToString());
+        textMaxVida.GetComponentInChildren<TextMeshProUGUI>().SetText(maxVida.ToString());
+        
         if (vida <= 0)
         {
             panelGameOver.SetActive(true);

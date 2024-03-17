@@ -2561,6 +2561,11 @@ MeshCollider:
   m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: -6296406880743504499, guid: 43278e08062ec9f49b576cecc59d84db, type: 3}
+--- !u!1 &140845468 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1035095127046111607, guid: 8b6b4cc283bf65843a64afc67039ed2f, type: 3}
+  m_PrefabInstance: {fileID: 1523193168}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &141357876
 GameObject:
   m_ObjectHideFlags: 0
@@ -28897,9 +28902,21 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1908504872154460972, guid: 8b6b4cc283bf65843a64afc67039ed2f, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -18.7
+      objectReference: {fileID: 0}
+    - target: {fileID: 1908504872154460972, guid: 8b6b4cc283bf65843a64afc67039ed2f, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -22
+      objectReference: {fileID: 0}
     - target: {fileID: 2356902009203000114, guid: 8b6b4cc283bf65843a64afc67039ed2f, type: 3}
       propertyPath: m_Name
       value: --Canvas
+      objectReference: {fileID: 0}
+    - target: {fileID: 5123209799534445405, guid: 8b6b4cc283bf65843a64afc67039ed2f, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -22
       objectReference: {fileID: 0}
     - target: {fileID: 8372421249216702749, guid: 8b6b4cc283bf65843a64afc67039ed2f, type: 3}
       propertyPath: m_Pivot.x
@@ -31292,6 +31309,10 @@ PrefabInstance:
       propertyPath: textVida
       value: 
       objectReference: {fileID: 1523193172}
+    - target: {fileID: 4821131050273992313, guid: a37e0c67880fa4543934a42cb230ec88, type: 3}
+      propertyPath: textMaxVida
+      value: 
+      objectReference: {fileID: 140845468}
     - target: {fileID: 4821131050273992313, guid: a37e0c67880fa4543934a42cb230ec88, type: 3}
       propertyPath: panelGameOver
       value: 
