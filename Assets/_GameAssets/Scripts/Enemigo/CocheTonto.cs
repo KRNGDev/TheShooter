@@ -13,6 +13,9 @@ public class CocheTonto : MonoBehaviour
     private GameObject player;
 
     private GameObject suelo;
+
+    public int manejadordrop = 5;
+
     void Start()
     {
         player = GameObject.FindGameObjectWithTag("Player");
@@ -42,7 +45,7 @@ public class CocheTonto : MonoBehaviour
 
             }
 
-            int dropea = UnityEngine.Random.Range(0, 5);
+            int dropea = UnityEngine.Random.Range(0, manejadordrop);
 
             if (dropea == 0){
                 print("Dropea");
