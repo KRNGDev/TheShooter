@@ -13,7 +13,5 @@ public class DropeoItem : MonoBehaviour
         Vector3 posicion = transform.position + elevacion;
 
         Instantiate(item[itemAleatorio], posicion, transform.rotation);
-
-
     }
 }

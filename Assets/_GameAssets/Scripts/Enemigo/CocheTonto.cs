@@ -42,8 +42,13 @@ public class CocheTonto : MonoBehaviour
 
             }
 
+            int dropea = UnityEngine.Random.Range(0, 5);
+
+            if (dropea == 0){
+                print("Dropea");
+                gameObject.GetComponent<DropeoItem>().SoltarObjeto();
+            }
             print("Destruido");
-            gameObject.GetComponent<DropeoItem>().SoltarObjeto();
             Destroy(gameObject, 1);
         }
     }

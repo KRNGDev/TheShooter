@@ -179,6 +179,7 @@ MonoBehaviour:
   - {fileID: 9107158626545401785, guid: 55b5e6791f3693c4e9331a74034e95fc, type: 3}
   - {fileID: 2479006035301491789, guid: ddbba6f35037abe40863762dc78b5a1a, type: 3}
   - {fileID: 2479006035301491789, guid: ddbba6f35037abe40863762dc78b5a1a, type: 3}
+  alturaDrop: 1
 --- !u!1001 &8553700448774359044
 PrefabInstance:
   m_ObjectHideFlags: 0

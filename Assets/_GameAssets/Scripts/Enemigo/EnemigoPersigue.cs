@@ -113,9 +113,13 @@ public class EnemigoPersigue : MonoBehaviour
                 player.GetComponent<SistemaPuntos>().puntuacion += 1;
 
             }
+            int dropea = Random.Range(0, 5);
 
-            gameObject.GetComponent<DropeoItem>().SoltarObjeto();
-            Destroy(gameObject, 1);
+            if (dropea == 0){
+                print("Dropea");
+                gameObject.GetComponent<DropeoItem>().SoltarObjeto();
+            }
+                Destroy(gameObject, 1);
         }
 
 
