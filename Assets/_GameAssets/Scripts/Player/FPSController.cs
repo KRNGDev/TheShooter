@@ -21,18 +21,30 @@ public class FPSController : MonoBehaviour
  
     public bool canMove = true;
  
-    
+    public UIScript ui;
+
     CharacterController characterController;
     void Start()
     {
-        characterController = GetComponent<CharacterController>();
-        Cursor.lockState = CursorLockMode.Locked;
-        Cursor.visible = false;
+        if (ui.desactivado){
+            characterController = GetComponent<CharacterController>();
+            Cursor.lockState = CursorLockMode.Locked;
+            Cursor.visible = false;
+        }else{
+            characterController = GetComponent<CharacterController>();
+            Cursor.lockState = CursorLockMode.None;
+            Cursor.visible = true; 
+        }
+
     }
  
     void Update()
     {
- 
+         if (ui.desactivado){
+            characterController = GetComponent<CharacterController>();
+            Cursor.lockState = CursorLockMode.Locked;
+            Cursor.visible = false;
+
         #region Handles Movment
         Vector3 forward = transform.TransformDirection(Vector3.forward);
         Vector3 right = transform.TransformDirection(Vector3.right);
@@ -75,5 +87,11 @@ public class FPSController : MonoBehaviour
         }
  
         #endregion
+        }else{
+            characterController = GetComponent<CharacterController>();
+            Cursor.lockState = CursorLockMode.None;
+            Cursor.visible = true; 
+        }
+
     }
 }

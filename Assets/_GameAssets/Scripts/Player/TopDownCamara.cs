@@ -18,7 +18,8 @@ namespace ProyectoTank.Camaras
 
         public Vector3 VelReferencia;
 
-
+        public UIScript ui;
+        
         #endregion
 
 
@@ -36,8 +37,10 @@ namespace ProyectoTank.Camaras
         // Update is called once per frame
         void Update()
         {
+            if (ui.desactivado){
+                ManejoCamara();
+            }
 
-            ManejoCamara();
         }
         #endregion
 

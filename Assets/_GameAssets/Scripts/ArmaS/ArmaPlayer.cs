@@ -22,6 +22,7 @@ public class ArmaPlayer : MonoBehaviour
 
     public GameObject armaArrojadiza;
 
+    public UIScript ui;
     private void Awake()
     {
 
@@ -43,7 +44,9 @@ public class ArmaPlayer : MonoBehaviour
     {
         if (Input.GetButtonDown("Fire1"))
         {
-            ApretarGatillo();
+            if (ui.desactivado){
+                ApretarGatillo();
+            }
         }
         else if (Input.GetKeyDown(KeyCode.R))
         {

@@ -11,15 +11,13 @@ public class DisparoEnemigo : MonoBehaviour
     public AudioClip audioDisparo;
     EnemigoPersigue enemigo;
 
-    void Start()
-    {
-
-    }
 
     public void Disparar()
     {
         GameObject bala = Instantiate(prfabBala, transforEmisor.position, transforEmisor.rotation);
         bala.GetComponent<Rigidbody>().AddForce(bala.transform.forward * fuerzaDisparo);
+
+        enemigo = new EnemigoPersigue();
         enemigo.puedeDisparar = false;
 
         if (audioDisparo != null)

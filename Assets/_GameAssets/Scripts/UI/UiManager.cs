@@ -10,6 +10,8 @@ public class UiManager : MonoBehaviour
     public GameObject botonMenu;
     public String scene;
     public float tiempoEpera = 0.2f;
+    
+        // Update is called once per frame 
     public void ActivarPanel()
     {
         panelMenu.SetActive(true);

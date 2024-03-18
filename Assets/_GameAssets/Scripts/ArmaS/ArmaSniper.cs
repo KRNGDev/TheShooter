@@ -79,6 +79,7 @@ public class ArmaSniper : MonoBehaviour
 
             if (hitInfo.transform.CompareTag("Suelo"))
             {
+                print("TagSuelo");
                 hitInfo.transform.GetComponentInChildren<Rigidbody>().AddForce(Vector3.forward * fuerzaDisparo);
             }
 
