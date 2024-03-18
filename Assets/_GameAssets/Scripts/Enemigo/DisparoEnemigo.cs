@@ -9,7 +9,7 @@ public class DisparoEnemigo : MonoBehaviour
     public Transform transforEmisor;
     public float fuerzaDisparo = 50.0f;
     public AudioClip audioDisparo;
-    EnemigoPersigue enemigo;
+    public EnemigoPersigue enemigo;
 
 
     public void Disparar()
@@ -17,7 +17,7 @@ public class DisparoEnemigo : MonoBehaviour
         GameObject bala = Instantiate(prfabBala, transforEmisor.position, transforEmisor.rotation);
         bala.GetComponent<Rigidbody>().AddForce(bala.transform.forward * fuerzaDisparo);
 
-        enemigo = new EnemigoPersigue();
+        //enemigo = EnemigoPersigue();
         enemigo.puedeDisparar = false;
 
         if (audioDisparo != null)

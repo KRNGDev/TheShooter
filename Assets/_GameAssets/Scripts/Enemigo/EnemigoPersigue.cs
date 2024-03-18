@@ -17,7 +17,7 @@ public class EnemigoPersigue : MonoBehaviour
     public bool puedeDisparar = true;
     DisparoEnemigo disparo;
 
-    public int manejadordrop = 5;
+    public int divisordrop = 5;
 
     // Start is called before the first frame update
     void Start()
@@ -116,7 +116,7 @@ public class EnemigoPersigue : MonoBehaviour
                 player.GetComponent<SistemaPuntos>().puntuacion += 1;
 
             }
-            int dropea = Random.Range(0, manejadordrop);
+            int dropea = Random.Range(0, divisordrop);
 
             if (dropea == 0){
                 print("Dropea");

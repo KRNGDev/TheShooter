@@ -5,7 +5,8 @@ using TMPro;
 using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.UI;
-
+using UnityEngine.SceneManagement;
+using System.Threading;
 public class Player : MonoBehaviour
 {
     // public Animator animator;
@@ -23,6 +24,8 @@ public class Player : MonoBehaviour
     public GameObject textMaxVida;
 
     public GameObject textVida;
+
+//    public UIScript ui;
 
     // Start is called before the first frame update
     void Start()
@@ -49,8 +52,13 @@ public class Player : MonoBehaviour
         
         if (vida <= 0)
         {
+            
             panelGameOver.SetActive(true);
+//            ui.desactivado = true;
             Destroy(gameObject);
+//            SceneManager.LoadScene(0);
+            
+
         }
         /*
                 //  animator.SetFloat("X", x);
