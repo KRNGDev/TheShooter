@@ -14,9 +14,11 @@ public class UIScript : MonoBehaviour
         {
             if(desactivado){
                 panelMenu.SetActive(true); 
+                Time.timeScale = 0;
                 desactivado = false;
             }else if (!desactivado){
                 panelMenu.SetActive(false);
+                Time.timeScale = 1;
                 desactivado = true;
         }
         }
