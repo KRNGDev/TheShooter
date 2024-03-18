@@ -457,6 +457,7 @@ MonoBehaviour:
   transforEmisor: {fileID: 2748258599194950716}
   fuerzaDisparo: 150
   audioDisparo: {fileID: 8300000, guid: 5105ea277b17a244faccad58f4a57fb7, type: 3}
+  enemigo: {fileID: 0}
 --- !u!114 &6815435724218216710
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -475,6 +476,7 @@ MonoBehaviour:
   grado: 0
   atacando: 0
   puedeDisparar: 1
+  divisordrop: 5
 --- !u!114 &5922085323451501518
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -491,9 +493,6 @@ MonoBehaviour:
   - {fileID: 2479006035301491789, guid: ddbba6f35037abe40863762dc78b5a1a, type: 3}
   - {fileID: 9107158626545401785, guid: 55b5e6791f3693c4e9331a74034e95fc, type: 3}
   - {fileID: 2479006035301491789, guid: ddbba6f35037abe40863762dc78b5a1a, type: 3}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
   alturaDrop: 1
 --- !u!1 &2733932934255676294
 GameObject:

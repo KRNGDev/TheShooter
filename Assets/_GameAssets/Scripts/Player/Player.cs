@@ -25,7 +25,7 @@ public class Player : MonoBehaviour
 
     public GameObject textVida;
 
-//    public UIScript ui;
+    public UIScript ui;
 
     // Start is called before the first frame update
     void Start()
@@ -54,7 +54,7 @@ public class Player : MonoBehaviour
         {
             
             panelGameOver.SetActive(true);
-//            ui.desactivado = true;
+            ui.desactivado = false;
             Destroy(gameObject);
 //            SceneManager.LoadScene(0);
             

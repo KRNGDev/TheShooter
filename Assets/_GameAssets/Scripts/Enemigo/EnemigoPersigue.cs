@@ -24,6 +24,7 @@ public class EnemigoPersigue : MonoBehaviour
     {
         player = GameObject.FindGameObjectWithTag("Player");
         targetEnemigo = GameObject.FindGameObjectWithTag("Player");
+        print("EnemigoPersigue");
         disparo = GetComponent<DisparoEnemigo>();
     }
 
@@ -100,9 +101,11 @@ public class EnemigoPersigue : MonoBehaviour
     void TiempoEspera()
     {
 
-
+        print("TiempoEspera");
         disparo.Disparar();
-        puedeDisparar = true;
+        //Enemigo se autodispara
+        //puedeDisparar = true;
+        puedeDisparar = false;
     }
 
 
