@@ -27,11 +27,14 @@ public class UIScript : MonoBehaviour
     // Start is called before the first frame update
     public void Reset()
     {
+        Time.timeScale = 1;
         SceneManager.LoadScene(1);
+
     }
 
    public void CargarMenu()
     {
+        Time.timeScale = 1;
         SceneManager.LoadScene(0);
     }
 
