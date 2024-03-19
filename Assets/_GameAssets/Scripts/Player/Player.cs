@@ -56,7 +56,7 @@ public class Player : MonoBehaviour
             panelGameOver.SetActive(true);
             ui.desactivado = false;
             Destroy(gameObject);
-//            SceneManager.LoadScene(0);
+            SceneManager.LoadScene(0);
             
 
         }
