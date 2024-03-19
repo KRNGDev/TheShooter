@@ -35,11 +35,11 @@ public class EnemigoPersigue : MonoBehaviour
     }
     public void ComportamientoEnemigo()
     {
-        if (Vector3.Distance(transform.position, targetEnemigo.transform.position) > 30)
+        if (!targetEnemigo||Vector3.Distance(transform.position, targetEnemigo.transform.position) > 30)
         {
 
             cronometro += 1 * Time.deltaTime;
-            if (cronometro >= 4)
+            if (cronometro >= 2)
             {
                 rutina = Random.Range(0, 2);
                 cronometro = 0;
@@ -58,7 +58,7 @@ public class EnemigoPersigue : MonoBehaviour
 
                 case 2:
                     transform.rotation = Quaternion.RotateTowards(transform.rotation, angulo, 0.5f);
-                    transform.Translate(Vector3.forward * 1 * Time.deltaTime);
+                    transform.Translate(Vector3.forward * 4 * Time.deltaTime);
 
                     break;
 

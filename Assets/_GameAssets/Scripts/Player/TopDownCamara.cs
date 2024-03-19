@@ -19,25 +19,27 @@ namespace ProyectoTank.Camaras
         public Vector3 VelReferencia;
 
         public UIScript ui;
-        
+
         #endregion
 
 
 
         #region Main Metodos
         // Start is called before the first frame update
-        void Start()
+        void Awake()
         {
 
-            // StartCoroutine("Tiempo");
-            m_target = GameObject.FindGameObjectWithTag("Player").GetComponent<Transform>();
+            // StartCoroutine("Tiempo");           
+                m_target = GameObject.FindGameObjectWithTag("Player").GetComponent<Transform>();
+            
 
         }
 
         // Update is called once per frame
         void Update()
         {
-            if (ui.desactivado){
+            if (ui.desactivado)
+            {
                 ManejoCamara();
             }
 
@@ -76,21 +78,21 @@ namespace ProyectoTank.Camaras
             transform.LookAt(flatTargetPosition);*/
 
             // Obtenemos la rotación actual del jugador
-    Quaternion playerRotation = m_target.rotation;
+            Quaternion playerRotation = m_target.rotation;
 
-    // Rotamos la posición de la cámara respecto a la rotación del jugador
-    Vector3 cameraOffset = playerRotation * new Vector3(0, -m_Altura, -m_Distancia);
+            // Rotamos la posición de la cámara respecto a la rotación del jugador
+            Vector3 cameraOffset = playerRotation * new Vector3(0, -m_Altura, -m_Distancia);
 
-    // Calculamos la posición final de la cámara
-    Vector3 finalPosition = m_target.position + cameraOffset;
+            // Calculamos la posición final de la cámara
+            Vector3 finalPosition = m_target.position + cameraOffset;
 
-    // Actualizamos la posición de la cámara suavemente
-    transform.position = Vector3.SmoothDamp(transform.position, finalPosition, ref VelReferencia, m_SmoothSpeed);
+            // Actualizamos la posición de la cámara suavemente
+            transform.position = Vector3.SmoothDamp(transform.position, finalPosition, ref VelReferencia, m_SmoothSpeed);
 
-    // Hacemos que la cámara mire hacia donde mira el jugador
-    transform.LookAt(m_target.position + m_target.forward * 2); // Ajusta el multiplicador según tu escala de mundo
+            // Hacemos que la cámara mire hacia donde mira el jugador
+            transform.LookAt(m_target.position + m_target.forward * 2); // Ajusta el multiplicador según tu escala de mundo
 
-            
+
 
         }
         IEnumerator Tiempo()

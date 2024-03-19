@@ -49,15 +49,16 @@ public class Player : MonoBehaviour
         //Escribe la vida en el panel de vida
         textVida.GetComponentInChildren<TextMeshProUGUI>().SetText(vida.ToString());
         textMaxVida.GetComponentInChildren<TextMeshProUGUI>().SetText(maxVida.ToString());
-        
+
         if (vida <= 0)
         {
-            
-            panelGameOver.SetActive(true);
-            ui.desactivado = false;
+
+            //panelGameOver.SetActive(true);
+
+            // ui.desactivado = false;
             Destroy(gameObject);
             SceneManager.LoadScene(0);
-            
+
 
         }
         /*
