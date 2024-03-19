@@ -53,11 +53,11 @@ public class Player : MonoBehaviour
         if (vida <= 0)
         {
 
-            //panelGameOver.SetActive(true);
+            panelGameOver.SetActive(true);
 
-            // ui.desactivado = false;
+            ui.desactivado = false;
             Destroy(gameObject);
-            SceneManager.LoadScene(0);
+            //SceneManager.LoadScene(0);
 
 
         }

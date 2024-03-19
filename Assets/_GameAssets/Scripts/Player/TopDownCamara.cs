@@ -30,14 +30,16 @@ namespace ProyectoTank.Camaras
         {
 
             // StartCoroutine("Tiempo");           
-                m_target = GameObject.FindGameObjectWithTag("Player").GetComponent<Transform>();
-            
+            m_target = GameObject.FindGameObjectWithTag("Player").GetComponent<Transform>();
+
 
         }
 
         // Update is called once per frame
-        void Update()
+        void FixedUpdate()
         {
+
+
             if (ui.desactivado)
             {
                 ManejoCamara();
