@@ -16,12 +16,13 @@ public class UIScript : MonoBehaviour
 
     void Start()
     {
+        Time.timeScale = 1;
         player = GameObject.FindWithTag("Player");
 
     }
     void Update()
     {
-        
+
 
         if (Input.GetKeyDown(KeyCode.Escape))
         {

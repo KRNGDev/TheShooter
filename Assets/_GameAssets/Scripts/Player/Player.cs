@@ -56,7 +56,11 @@ public class Player : MonoBehaviour
             panelGameOver.SetActive(true);
 
             ui.desactivado = false;
-            Destroy(gameObject);
+            Cursor.visible = true;
+
+            Time.timeScale = 0;
+
+            // Destroy(gameObject);
             //SceneManager.LoadScene(0);
 
 
