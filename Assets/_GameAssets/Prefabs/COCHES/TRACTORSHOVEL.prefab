@@ -11,12 +11,7 @@ GameObject:
   - component: {fileID: 8644475716040411640}
   - component: {fileID: 7533977487796570994}
   - component: {fileID: 872310897226727889}
-  - component: {fileID: 3635555945409787897}
-  - component: {fileID: 1975723673262197955}
-  - component: {fileID: 1535648413182807863}
-  - component: {fileID: 3891045667748785795}
   - component: {fileID: 2745735880756559167}
-  - component: {fileID: 2348268455774917151}
   - component: {fileID: 3318513310521123999}
   m_Layer: 3
   m_Name: TRACTORSHOVEL
@@ -87,68 +82,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 0.94073105, y: 0.6663816, z: 1.0176635}
-  m_Center: {x: -0.029634476, y: 1.1877104, z: -0.24525571}
---- !u!138 &3635555945409787897
-FixedJoint:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3353035263645398590}
-  m_ConnectedBody: {fileID: 0}
-  m_ConnectedArticulationBody: {fileID: 0}
-  m_BreakForce: 2000
-  m_BreakTorque: 2000
-  m_EnableCollision: 0
-  m_EnablePreprocessing: 1
-  m_MassScale: 1
-  m_ConnectedMassScale: 1
---- !u!138 &1975723673262197955
-FixedJoint:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3353035263645398590}
-  m_ConnectedBody: {fileID: 0}
-  m_ConnectedArticulationBody: {fileID: 0}
-  m_BreakForce: 2000
-  m_BreakTorque: 2000
-  m_EnableCollision: 0
-  m_EnablePreprocessing: 1
-  m_MassScale: 1
-  m_ConnectedMassScale: 1
---- !u!138 &1535648413182807863
-FixedJoint:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3353035263645398590}
-  m_ConnectedBody: {fileID: 0}
-  m_ConnectedArticulationBody: {fileID: 0}
-  m_BreakForce: 2000
-  m_BreakTorque: 2000
-  m_EnableCollision: 0
-  m_EnablePreprocessing: 1
-  m_MassScale: 1
-  m_ConnectedMassScale: 1
---- !u!138 &3891045667748785795
-FixedJoint:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3353035263645398590}
-  m_ConnectedBody: {fileID: 0}
-  m_ConnectedArticulationBody: {fileID: 0}
-  m_BreakForce: 2000
-  m_BreakTorque: 2000
-  m_EnableCollision: 0
-  m_EnablePreprocessing: 1
-  m_MassScale: 1
-  m_ConnectedMassScale: 1
+  m_Size: {x: 1.5977819, y: 1.4518216, z: 1.8861791}
+  m_Center: {x: -0.010753632, y: 0.7949904, z: 0.18900174}
 --- !u!114 &2745735880756559167
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -165,27 +100,6 @@ MonoBehaviour:
   minAngle: 100
   maxAngle: 260
   manejadordrop: 5
---- !u!65 &2348268455774917151
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3353035263645398590}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 0.94073105, y: 0.315857, z: 0.7343335}
-  m_Center: {x: -0.029634476, y: 0.6818361, z: 0.66502213}
 --- !u!114 &3318513310521123999
 MonoBehaviour:
   m_ObjectHideFlags: 0

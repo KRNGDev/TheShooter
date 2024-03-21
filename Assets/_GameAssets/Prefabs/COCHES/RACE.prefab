@@ -11,10 +11,6 @@ GameObject:
   - component: {fileID: 4461556086765848147}
   - component: {fileID: 2461094856649831907}
   - component: {fileID: 8766775651959784185}
-  - component: {fileID: 5631665681172090451}
-  - component: {fileID: 6042699314702968586}
-  - component: {fileID: 3033509985228199300}
-  - component: {fileID: 7507344350976454225}
   - component: {fileID: 4398917315150756205}
   - component: {fileID: 338492793441785848}
   m_Layer: 3
@@ -86,68 +82,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 0.94073105, y: 0.089422524, z: 2.6627998}
-  m_Center: {x: -0.029634476, y: 0.60045063, z: -0.01471138}
---- !u!138 &5631665681172090451
-FixedJoint:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7743102945715102286}
-  m_ConnectedBody: {fileID: 0}
-  m_ConnectedArticulationBody: {fileID: 0}
-  m_BreakForce: 2000
-  m_BreakTorque: 2000
-  m_EnableCollision: 0
-  m_EnablePreprocessing: 1
-  m_MassScale: 1
-  m_ConnectedMassScale: 1
---- !u!138 &6042699314702968586
-FixedJoint:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7743102945715102286}
-  m_ConnectedBody: {fileID: 0}
-  m_ConnectedArticulationBody: {fileID: 0}
-  m_BreakForce: 2000
-  m_BreakTorque: 2000
-  m_EnableCollision: 0
-  m_EnablePreprocessing: 1
-  m_MassScale: 1
-  m_ConnectedMassScale: 1
---- !u!138 &3033509985228199300
-FixedJoint:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7743102945715102286}
-  m_ConnectedBody: {fileID: 0}
-  m_ConnectedArticulationBody: {fileID: 0}
-  m_BreakForce: 2000
-  m_BreakTorque: 2000
-  m_EnableCollision: 0
-  m_EnablePreprocessing: 1
-  m_MassScale: 1
-  m_ConnectedMassScale: 1
---- !u!138 &7507344350976454225
-FixedJoint:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7743102945715102286}
-  m_ConnectedBody: {fileID: 0}
-  m_ConnectedArticulationBody: {fileID: 0}
-  m_BreakForce: 2000
-  m_BreakTorque: 2000
-  m_EnableCollision: 0
-  m_EnablePreprocessing: 1
-  m_MassScale: 1
-  m_ConnectedMassScale: 1
+  m_Size: {x: 1.3109301, y: 0.6691682, z: 2.6627998}
+  m_Center: {x: 0.0017974973, y: 0.33153245, z: -0.01471138}
 --- !u!114 &4398917315150756205
 MonoBehaviour:
   m_ObjectHideFlags: 0

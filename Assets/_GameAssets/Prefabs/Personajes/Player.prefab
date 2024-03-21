@@ -77,13 +77,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 682b82c92136e1c429807949b842e9d3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  vida: 10
+  vida: 5
+  maxVida: 5
   fuerzaSalto: 10
   velRotate: 200
   velMovimiento: 5
   audioSalto: {fileID: 0}
   panelGameOver: {fileID: 0}
+  textMaxVida: {fileID: 0}
   textVida: {fileID: 0}
+  ui: {fileID: 0}
 --- !u!114 &2819233323551591698
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -107,6 +110,7 @@ MonoBehaviour:
   camaraPrincipal: {fileID: 0}
   armaSecundaria: {fileID: 1147082028634831995}
   armaArrojadiza: {fileID: 3522735452552756197}
+  ui: {fileID: 0}
 --- !u!114 &2575762022877303880
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -127,6 +131,7 @@ MonoBehaviour:
   lookSpeed: 2
   lookXLimit: 45
   canMove: 1
+  ui: {fileID: 0}
 --- !u!54 &3253870168750190167
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -1356,7 +1361,8 @@ PrefabInstance:
     m_RemovedComponents:
     - {fileID: 7553887249257774751, guid: abab535da5aa2bb4a859fd2b24ba6607, type: 3}
     - {fileID: 378320553648968999, guid: abab535da5aa2bb4a859fd2b24ba6607, type: 3}
-    m_RemovedGameObjects: []
+    m_RemovedGameObjects:
+    - {fileID: 911910329908981007, guid: abab535da5aa2bb4a859fd2b24ba6607, type: 3}
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: abab535da5aa2bb4a859fd2b24ba6607, type: 3}
