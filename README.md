@@ -1,6 +1,6 @@
 # 🎮 TheShooter: Juego FPS de Aventura 🚀
 
-**TheShooter** es un juego de disparos en primera persona (FPS) desarrollado en **Unity**, diseñado para ofrecer una experiencia dinámica y desafiante. Con un entorno 3D inmersivo, combates rápidos y niveles diseñados estratégicamente, el proyecto combina elementos clásicos de los FPS con innovaciones modernas.
+**TheShooter** es un juego de disparos en tercera persona con camara topDown desarrollado en **Unity**, diseñado para ofrecer una experiencia dinámica y desafiante. Con un entorno 3D inmersivo, combates rápidos, el proyecto contiene elementos clásicos de los BulletHells .
 
 ---
 
@@ -8,7 +8,7 @@
 
 ### 🔫 Combate Intenso
 - Mecánica de disparos fluida y precisa.
-- Enemigos con inteligencia artificial que reaccionan al jugador.
+- Enemigos con inteligencia que reaccionan al jugador.
 - Varias armas con diferentes características y estilos de juego.
 
 ### 🗺️ Entornos Detallados
